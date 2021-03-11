@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.3.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43690,4350871296" ReportOptions.Description.Text="" ReportOptions.LastChange="44047,3697437616" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxContasAReceber" DataSetName="frxContasAReceber"/>
+    <item DataSet="frxGlobal" DataSetName="Global"/>
+  </Datasets>
+  <Variables>
+    <item Name=" var"/>
+    <item Name="cnpj"/>
+    <item Name="cnpjCliente"/>
+    <item Name="dia"/>
+    <item Name="mes"/>
+    <item Name="ano"/>
+    <item Name="valor"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="5" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxTableObject Name="TableObject1" AllowVectorExport="True" Left="1" Top="336,29159">
+      <TfrxTableColumn Name="TableColumn1" Width="716,5906" MinWidth="0" MaxWidth="75,5906"/>
+      <TfrxTableRow Name="TableRow1" MinHeight="0" MaxHeight="0" Height="18,89765">
+        <TfrxTableCell Name="TableCell1" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      </TfrxTableRow>
+      <TfrxTableRow Name="TableRow2" MinHeight="0" MaxHeight="0" Height="18,89765">
+        <TfrxTableCell Name="TableCell5" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      </TfrxTableRow>
+      <TfrxTableRow Name="TableRow3" MinHeight="0" MaxHeight="0" Height="18,89765">
+        <TfrxTableCell Name="TableCell9" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      </TfrxTableRow>
+      <TfrxTableRow Name="TableRow4" MinHeight="0" MaxHeight="0" Height="18,89765">
+        <TfrxTableCell Name="TableCell13" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      </TfrxTableRow>
+    </TfrxTableObject>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="306,67718" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="0" Top="25,10235" Width="718,1107" Height="281,81911" Frame.Typ="0"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="9" Top="27,66141" Width="34,01577" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Nº"/>
+      <TfrxMemoView Name="frxContasRecebernumero_nfce" IndexTag="1" AllowVectorExport="True" Left="36,7953" Top="27,66141" Width="79,37013" Height="18,89765" DataField="CRE_NUMERO_VENDA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_NUMERO_VENDA&#34;]"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="123,72449" Top="27,66141" Width="89,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Vencimento"/>
+      <TfrxMemoView Name="frxContasRecebervlr_compra" IndexTag="1" AllowVectorExport="True" Left="603,28386" Top="27,66141" Width="109,60637" Height="18,89765" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_VALOR_COMPRA&#34;]"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="6,55906" Top="53,67718" Width="445,98454" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Pagarei (emos) por essa única via de nota promissória a,"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="7,55906" Top="103,48825" Width="226,7718" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Ou a sua ordem a quantia de :"/>
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="6,55906" Top="152,28355" Width="704,59864" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="em moeda corrente deste país, pagável em, [Global.&#34;PRI_MUNICIPIO&#34;] - [Global.&#34;PRI_UF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo13" AllowVectorExport="True" Left="6,55906" Top="182,07885" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="EMITENTE:"/>
+      <TfrxMemoView Name="frxDBDataset2nome_razao" IndexTag="1" AllowVectorExport="True" Left="6,70872" Top="78,29932" Width="415,7483" Height="26,45671" DataField="PRI_RAZAO" DataSet="frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_RAZAO&#34;]"/>
+      <TfrxMemoView Name="Memo15" AllowVectorExport="True" Left="509,23655" Top="181,29932" Width="90,70872" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="EMISSÃO:"/>
+      <TfrxMemoView Name="frxContasReceberdata_compra" IndexTag="1" AllowVectorExport="True" Left="568,7248" Top="177,29932" Width="119,60637" Height="26,45671" DataField="CRE_DATA_COMPRA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_COMPRA&#34;]"/>
+      <TfrxMemoView Name="Memo16" AllowVectorExport="True" Left="423,55906" Top="78,53556" Width="83,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="CPF/CNPJ:"/>
+      <TfrxMemoView Name="Memo17" AllowVectorExport="True" Left="5,5671" Top="236,53556" Width="94,48825" Height="26,45671" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="ENDEREÇO:"/>
+      <TfrxMemoView Name="frxDBDataset2endereco" IndexTag="1" AllowVectorExport="True" Left="71,43307087" Top="233,53556" Width="603,49629" Height="26,45671" DataSetName="frxUsuarios" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_ENDERECO_CLIENTE&#34;], Nº [frxContasAReceber.&#34;CRE_NUMERO_CLIENTE&#34;] [frxContasAReceber.&#34;CRE_COMPLEMENTO_CLIENTE&#34;]-[frxContasAReceber.&#34;CRE_BAIRRO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_MUNICIPIO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_CEP_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo18" AllowVectorExport="True" Left="6,55906" Top="271,00804" Width="162,51979" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="ASS. DO EMITENTE:"/>
+      <TfrxMemoView Name="cnpj" IndexTag="1" AllowVectorExport="True" Left="483,14966" Top="76,53556" Width="181,41744" Height="22,67718" DataField="PRI_CPFCNPJ" DataSet="frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_CPFCNPJ&#34;]"/>
+      <TfrxMemoView Name="frxContasRecebercliente" IndexTag="1" AllowVectorExport="True" Left="71,55906" Top="180,47248" Width="400,63018" Height="18,89765" DataField="CRE_NOME_CLIENTE" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_NOME_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo21" AllowVectorExport="True" Left="5,52783" Top="211,47248" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="CPF/CNPJ:"/>
+      <TfrxMemoView Name="cnpjCliente" IndexTag="1" AllowVectorExport="True" Left="71,43307087" Top="208,47248" Width="211,65368" Height="18,89765" DataField="CRE_CPF_CLIENTE" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_CPF_CLIENTE&#34;]"/>
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="118" Top="293,52752" Width="560" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="valor" IndexTag="1" AllowVectorExport="True" Left="213" Top="103,51965819" Width="495,37013" Height="44,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[valor]"/>
+      <TfrxMemoView Name="frxContasAReceberCRE_DATA_VENCIMENTO" IndexTag="1" AllowVectorExport="True" Left="214" Top="28,10235" Width="341,37013" Height="18,89765" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="dd 'de' mmmm 'de' yyyy" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_VENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="1" Top="0,10235" Width="717,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="Nota Promissória"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>

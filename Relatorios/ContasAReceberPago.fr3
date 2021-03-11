@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.3.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44041,6764895718" ReportOptions.Description.Text="" ReportOptions.LastChange="44054,5704781713" ScriptLanguage="PascalScript" ScriptText.Text="procedure Page1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;var&#13;&#10;  CNPJ, CEP, CNPJCLI : String;&#13;&#10;begin&#13;&#10;  CNPJ := &#60;Global.&#34;PRI_CPFCNPJ&#34;&#62;;&#13;&#10;  CNPJCLI := &#60;frxContasAReceber.&#34;CRE_CPF_CLIENTE&#34;&#62;;&#13;&#10;  //Utilizar o copy para formatar strings&#13;&#10;  case Length(CNPJ) of&#13;&#10;    11: Memo1.Text := 'Cpf : '+Copy(CNPJ,1,3)+'.'+Copy(CNPJ,4,3)+'.'+Copy(CNPJ,7,3)+'-'+Copy(CNPJ,9,2);&#13;&#10;    14: Memo1.Text := 'Cnpj : '+ Copy(CNPJ,1,2)+'.'+Copy(CNPJ,3,3)+'.'+Copy(CNPJ,6,3)+'/'+Copy(CNPJ,9,4)+'-'+Copy(CNPJ,13,2);&#13;&#10;  end;&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxContasAReceber" DataSetName="frxContasAReceber"/>
+    <item DataSet="frxGlobal" DataSetName="Global"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="Titulo"/>
+    <item Name="data3"/>
+    <item Name="data4"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="79,67718" Left="0" Top="325,03958" Width="755,906">
+      <TfrxTableObject Name="TableObject4" AllowVectorExport="True" Left="3" Top="2,00773">
+        <TfrxTableColumn Name="TableColumn19" Width="202,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow4" MinHeight="0" MaxHeight="0" Height="18,89765">
+          <TfrxTableCell Name="TableCell19" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" HAlign="haCenter" ParentFont="False" Text="Totais "/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow5" MinHeight="0" MaxHeight="0" Height="18,89765">
+          <TfrxTableCell Name="TableCell24" AllowVectorExport="True" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Pago"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow6" MinHeight="0" MaxHeight="0" Height="18,89765">
+          <TfrxTableCell Name="TableCell29" AllowVectorExport="True" Restrictions="8" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text="[SUM(IIF(&#60;frxContasAReceber.&#34;CRE_STATUS&#34;&#62;='Pago', &#60;frxContasAReceber.&#34;CRE_VALOR_PARCELA&#34;&#62;,0),MasterData1,2)] "/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="85,76325472" Left="0" Top="18,89765" Width="755,906">
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="554" Top="28,10235" Width="65,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Emissão :"/>
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="154" Top="51,10235" Width="623" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="Date" IndexTag="1" AllowVectorExport="True" Left="608" Top="28,10235" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Date]"/>
+      <TfrxPictureView Name="img_logo" AllowVectorExport="True" Left="2" Top="0,10235" Width="150,42519685" Height="83,90551181" Center="True" Frame.Typ="0" HightQuality="True" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="GlobalPRI_FANTASIA" IndexTag="1" AllowVectorExport="True" Left="153" Top="0,10235" Width="400,63018" Height="18,89765" DataField="PRI_FANTASIA" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_FANTASIA&#34;]"/>
+      <TfrxMemoView Name="GlobalPRI_ENDERECO" IndexTag="1" AllowVectorExport="True" Left="153" Top="13,10235" Width="400,63018" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_ENDERECO&#34;] Nº [Global.&#34;PRI_NUMERO&#34;], [Global.&#34;PRI_BAIRRO&#34;] - [Global.&#34;PRI_MUNICIPIO&#34;]&#13;&#10;]"/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="555" Top="0,10235" Width="195,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Cnpj :"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="554" Top="14,10235" Width="65,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Telefone :"/>
+      <TfrxMemoView Name="GlobalPRI_TELEFONE" IndexTag="1" AllowVectorExport="True" Left="614" Top="14,10235" Width="158,74026" Height="18,89765" DataField="PRI_TELEFONE" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_TELEFONE&#34;]"/>
+      <TfrxMemoView Name="Titulo" IndexTag="1" AllowVectorExport="True" Left="0" Top="62,10235" Width="756,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[Titulo]"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="483" Top="62,10235" Width="267,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Período : [data3] a [data4]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="47,07061472" Left="0" Top="166,29932" Width="755,906" Condition="frxContasAReceber.&#34;CRE_CODIGO_CLIENTE&#34;">
+      <TfrxMemoView Name="frxContasAReceberCRE_CODIGO" IndexTag="1" AllowVectorExport="True" Left="0" Top="0" Width="751,94496" Height="16,89765" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_CODIGO&#34;] - [frxContasAReceber.&#34;CRE_NOME_CLIENTE&#34;] - Rg/Ie : [frxContasAReceber.&#34;CRE_RGIE_CLIENTE&#34;]-Cpf/cnpj : [frxContasAReceber.&#34;CRE_CPF_CLIENTE&#34;] - Telefone : [frxContasAReceber.&#34;CRE_TELEFONE_CLIENTE&#34;]">
+        <Formats>
+          <item FormatStr="000000" Kind="fkNumeric"/>
+          <item/>
+          <item/>
+          <item Kind="fkNumeric"/>
+          <item FormatStr="###.###.###-##" Kind="fkNumeric"/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="frxContasAReceberCRE_ENDERECO_CLIENTE" IndexTag="1" AllowVectorExport="True" Left="0" Top="13" Width="750,63018" Height="15,89765" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_ENDERECO_CLIENTE&#34;], Nº [frxContasAReceber.&#34;CRE_NUMERO_CLIENTE&#34;], [frxContasAReceber.&#34;CRE_BAIRRO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_MUNICIPIO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_CEP_CLIENTE&#34;]"/>
+      <TfrxTableObject Name="TableObject2" AllowVectorExport="True" Left="0" Top="32,70841">
+        <TfrxTableColumn Name="TableColumn7" Width="110,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn8" Width="112,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn9" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn10" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn11" Width="114,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn12" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow2" MinHeight="0" MaxHeight="0" Height="14,3622047244094">
+          <TfrxTableCell Name="TableCell7" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text=" Compra"/>
+          <TfrxTableCell Name="TableCell8" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" ParentFont="False" VAlign="vaBottom" Text="F. Pagamento"/>
+          <TfrxTableCell Name="TableCell9" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Vencimento"/>
+          <TfrxTableCell Name="TableCell10" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Quitação"/>
+          <TfrxTableCell Name="TableCell11" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="V. Pago"/>
+          <TfrxTableCell Name="TableCell12" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Status"/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxGroupHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="14,3622047244094" Left="0" Top="238,11039" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" RowCount="0">
+      <TfrxTableObject Name="TableObject1" AllowVectorExport="True" Left="0" Top="0,00773">
+        <TfrxTableColumn Name="TableColumn1" Width="109,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn2" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn3" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn4" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn5" Width="114,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn6" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow1" MinHeight="0" MaxHeight="0" Height="14,3622047244094">
+          <TfrxTableCell Name="TableCell1" AllowVectorExport="True" Restrictions="8" DataField="CRE_DATA_COMPRA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_COMPRA&#34;]"/>
+          <TfrxTableCell Name="TableCell2" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=" [frxContasAReceber.&#34;CRE_FORMA_PAGAMENTO&#34;]"/>
+          <TfrxTableCell Name="TableCell3" AllowVectorExport="True" Restrictions="8" DataField="CRE_DATA_VENCIMENTO" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_VENCIMENTO&#34;]"/>
+          <TfrxTableCell Name="TableCell4" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_QUITACAO&#34;]"/>
+          <TfrxTableCell Name="TableCell5" AllowVectorExport="True" Restrictions="8" DataField="CRE_VALOR_PAGO" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_VALOR_PAGO&#34;]"/>
+          <TfrxTableCell Name="TableCell6" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=" [frxContasAReceber.&#34;CRE_STATUS&#34;]"/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxMasterData>
+    <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="24,67718" Left="0" Top="275,90569" Width="755,906">
+      <TfrxTableObject Name="TableObject3" AllowVectorExport="True" Left="0" Top="2">
+        <TfrxTableColumn Name="TableColumn13" Width="110,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn14" Width="112,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn15" Width="113,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn16" Width="115,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn17" Width="112,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn18" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow3" MinHeight="0" MaxHeight="0" Height="16,3622047244094">
+          <TfrxTableCell Name="TableCell13" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" ParentFont="False" Text=""/>
+          <TfrxTableCell Name="TableCell14" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" ParentFont="False" Text=""/>
+          <TfrxTableCell Name="TableCell15" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" ParentFont="False" Text=""/>
+          <TfrxTableCell Name="TableCell16" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" HAlign="haRight" ParentFont="False" Text=""/>
+          <TfrxTableCell Name="TableCell17" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" Fill.BackColor="-16777194" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxContasAReceber.&#34;CRE_VALOR_Pago&#34;&#62;,MasterData1)] "/>
+          <TfrxTableCell Name="TableCell18" AllowVectorExport="True" Restrictions="8" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Segoe UI" Font.Style="0" Frame.Typ="0" ParentFont="False" Text=""/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxGroupFooter>
+  </TfrxReportPage>
+</TfrxReport>

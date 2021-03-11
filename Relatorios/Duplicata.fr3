@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.3.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43789,3521642708" ReportOptions.Description.Text="" ReportOptions.LastChange="44047,4047217245" ScriptLanguage="PascalScript" ScriptText.Text="procedure DataVencimentoOnAfterData(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxContasAReceber" DataSetName="frxContasAReceber"/>
+    <item DataSet="frxGlobal" DataSetName="Global"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="ValorEstenco"/>
+    <item Name="DataVencimento"/>
+    <item Name="cpfcnpjglobal"/>
+    <item Name="cpfcnpjemitente"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="0" RightMargin="0" TopMargin="2" BottomMargin="0" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="275,90569" Left="0" Top="18,89765" Width="793,7013" ColumnWidth="0" ColumnGap="0" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" RowCount="0">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="18,89765" Top="20,57483" Width="755,906" Height="245,66945" Frame.Typ="0" Shape="skRoundRectangle"/>
+      <TfrxShapeView Name="Shape2" AllowVectorExport="True" Left="162,51979" Top="41,57483" Width="60,47248" Height="18,89765" Frame.Typ="0" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="frxContasReceberref_parcelas" IndexTag="1" AllowVectorExport="True" Left="162,51979" Top="41,57483" Width="60,47248" Height="18,89765" DataField="CRE_REF_PARCELA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_REF_PARCELA&#34;]"/>
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="3,77953" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line2" AllowVectorExport="True" Left="15,11812" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line3" AllowVectorExport="True" Left="26,45671" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line4" AllowVectorExport="True" Left="37,7953" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line5" AllowVectorExport="True" Left="49,91342" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line6" AllowVectorExport="True" Left="61,25201" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line7" AllowVectorExport="True" Left="72,5906" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line8" AllowVectorExport="True" Left="83,92919" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line9" AllowVectorExport="True" Left="96,26778" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line10" AllowVectorExport="True" Left="107,60637" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line11" AllowVectorExport="True" Left="118,94496" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line12" AllowVectorExport="True" Left="130,28355" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line13" AllowVectorExport="True" Left="142,40167" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line14" AllowVectorExport="True" Left="153,74026" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line15" AllowVectorExport="True" Left="165,07885" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line16" AllowVectorExport="True" Left="176,41744" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line17" AllowVectorExport="True" Left="189,09462" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line18" AllowVectorExport="True" Left="200,43321" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line19" AllowVectorExport="True" Left="211,7718" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line20" AllowVectorExport="True" Left="223,11039" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line21" AllowVectorExport="True" Left="235,22851" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line22" AllowVectorExport="True" Left="246,5671" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line23" AllowVectorExport="True" Left="257,90569" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line24" AllowVectorExport="True" Left="269,24428" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line25" AllowVectorExport="True" Left="281,58287" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line26" AllowVectorExport="True" Left="292,92146" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line27" AllowVectorExport="True" Left="304,26005" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line28" AllowVectorExport="True" Left="315,59864" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line29" AllowVectorExport="True" Left="327,71676" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line30" AllowVectorExport="True" Left="339,05535" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line31" AllowVectorExport="True" Left="350,39394" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line32" AllowVectorExport="True" Left="361,73253" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line33" AllowVectorExport="True" Left="374,17347" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line34" AllowVectorExport="True" Left="385,51206" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line35" AllowVectorExport="True" Left="396,85065" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line36" AllowVectorExport="True" Left="408,18924" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line37" AllowVectorExport="True" Left="420,30736" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line38" AllowVectorExport="True" Left="431,64595" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line39" AllowVectorExport="True" Left="442,98454" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line40" AllowVectorExport="True" Left="454,32313" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line41" AllowVectorExport="True" Left="466,66172" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line42" AllowVectorExport="True" Left="478,00031" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line43" AllowVectorExport="True" Left="489,3389" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line44" AllowVectorExport="True" Left="500,67749" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line45" AllowVectorExport="True" Left="512,79561" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line46" AllowVectorExport="True" Left="524,1342" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line47" AllowVectorExport="True" Left="535,47279" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line48" AllowVectorExport="True" Left="546,81138" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line49" AllowVectorExport="True" Left="559,48856" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line50" AllowVectorExport="True" Left="570,82715" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line51" AllowVectorExport="True" Left="582,16574" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line52" AllowVectorExport="True" Left="593,50433" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line53" AllowVectorExport="True" Left="605,62245" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line54" AllowVectorExport="True" Left="616,96104" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line55" AllowVectorExport="True" Left="628,29963" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line56" AllowVectorExport="True" Left="639,63822" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line57" AllowVectorExport="True" Left="651,97681" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line58" AllowVectorExport="True" Left="663,3154" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line59" AllowVectorExport="True" Left="674,65399" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line60" AllowVectorExport="True" Left="685,99258" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line61" AllowVectorExport="True" Left="698,1107" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line62" AllowVectorExport="True" Left="709,44929" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line63" AllowVectorExport="True" Left="720,78788" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line64" AllowVectorExport="True" Left="732,12647" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line65" AllowVectorExport="True" Left="742,78788" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line66" AllowVectorExport="True" Left="754,12647" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line67" AllowVectorExport="True" Left="765,46506" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line69" AllowVectorExport="True" Left="778,58318" Top="273,70099" Width="7,55906" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="18,67718" Top="176,63791" Width="15,11812" Height="52,91342" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Rotation="90" Text="AVALISTA(S)"/>
+      <TfrxLineView Name="Line68" AllowVectorExport="True" Left="61,5906" Top="22,67718" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line70" AllowVectorExport="True" Left="61,5906" Top="29,7953" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line71" AllowVectorExport="True" Left="61,5906" Top="37,7953" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line72" AllowVectorExport="True" Left="61,5906" Top="44,91342" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line73" AllowVectorExport="True" Left="61,5906" Top="52,91342" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line74" AllowVectorExport="True" Left="61,5906" Top="60,03154" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line75" AllowVectorExport="True" Left="61,5906" Top="68,03154" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line76" AllowVectorExport="True" Left="61,5906" Top="75,14966" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line77" AllowVectorExport="True" Left="61,5906" Top="83,14966" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line78" AllowVectorExport="True" Left="61,5906" Top="90,26778" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line79" AllowVectorExport="True" Left="61,5906" Top="98,26778" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line80" AllowVectorExport="True" Left="61,5906" Top="105,3859" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line81" AllowVectorExport="True" Left="61,5906" Top="113,3859" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line82" AllowVectorExport="True" Left="61,5906" Top="120,50402" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line83" AllowVectorExport="True" Left="61,5906" Top="128,50402" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line84" AllowVectorExport="True" Left="61,5906" Top="135,62214" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line85" AllowVectorExport="True" Left="61,5906" Top="144,40167" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line86" AllowVectorExport="True" Left="61,5906" Top="151,51979" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line87" AllowVectorExport="True" Left="61,5906" Top="159,51979" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line88" AllowVectorExport="True" Left="61,5906" Top="166,63791" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line89" AllowVectorExport="True" Left="61,5906" Top="174,63791" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line90" AllowVectorExport="True" Left="61,5906" Top="181,75603" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line91" AllowVectorExport="True" Left="61,5906" Top="189,75603" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line92" AllowVectorExport="True" Left="61,5906" Top="196,87415" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line93" AllowVectorExport="True" Left="61,5906" Top="204,87415" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line94" AllowVectorExport="True" Left="61,5906" Top="211,99227" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line95" AllowVectorExport="True" Left="61,5906" Top="219,99227" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line96" AllowVectorExport="True" Left="61,5906" Top="227,11039" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line97" AllowVectorExport="True" Left="61,5906" Top="235,11039" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line98" AllowVectorExport="True" Left="61,5906" Top="242,22851" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line99" AllowVectorExport="True" Left="61,5906" Top="250,22851" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line100" AllowVectorExport="True" Left="61,5906" Top="257,34663" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line101" AllowVectorExport="True" Left="94,48825" Top="22,67718" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line102" AllowVectorExport="True" Left="94,48825" Top="29,7953" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line103" AllowVectorExport="True" Left="94,48825" Top="37,7953" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line104" AllowVectorExport="True" Left="94,48825" Top="44,91342" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line105" AllowVectorExport="True" Left="94,48825" Top="52,91342" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line106" AllowVectorExport="True" Left="94,48825" Top="60,03154" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line107" AllowVectorExport="True" Left="94,48825" Top="68,03154" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line108" AllowVectorExport="True" Left="94,48825" Top="75,14966" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line109" AllowVectorExport="True" Left="94,48825" Top="83,14966" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line110" AllowVectorExport="True" Left="94,48825" Top="90,26778" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line111" AllowVectorExport="True" Left="94,48825" Top="98,26778" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line112" AllowVectorExport="True" Left="94,48825" Top="105,3859" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line113" AllowVectorExport="True" Left="94,48825" Top="113,3859" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line114" AllowVectorExport="True" Left="94,48825" Top="120,50402" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line115" AllowVectorExport="True" Left="94,48825" Top="128,50402" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line116" AllowVectorExport="True" Left="94,48825" Top="135,62214" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line117" AllowVectorExport="True" Left="94,48825" Top="144,40167" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line118" AllowVectorExport="True" Left="94,48825" Top="151,51979" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line119" AllowVectorExport="True" Left="94,48825" Top="159,51979" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line120" AllowVectorExport="True" Left="94,48825" Top="166,63791" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line121" AllowVectorExport="True" Left="94,48825" Top="174,63791" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line122" AllowVectorExport="True" Left="94,48825" Top="181,75603" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line123" AllowVectorExport="True" Left="94,48825" Top="189,75603" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line124" AllowVectorExport="True" Left="94,48825" Top="196,87415" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line125" AllowVectorExport="True" Left="94,48825" Top="204,87415" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line126" AllowVectorExport="True" Left="94,48825" Top="211,99227" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line127" AllowVectorExport="True" Left="94,48825" Top="219,99227" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line128" AllowVectorExport="True" Left="94,48825" Top="227,11039" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line129" AllowVectorExport="True" Left="94,48825" Top="235,11039" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line130" AllowVectorExport="True" Left="94,48825" Top="242,22851" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line131" AllowVectorExport="True" Left="94,48825" Top="250,22851" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxLineView Name="Line132" AllowVectorExport="True" Left="94,48825" Top="257,34663" Width="0" Height="3,77953" Color="0" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="139,84261" Top="40,7953" Width="22,67718" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Nº"/>
+      <TfrxShapeView Name="Shape3" AllowVectorExport="True" Left="597,16574" Top="42,35436" Width="154,96073" Height="18,89765" Frame.Typ="0" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo3" IndexTag="1" AllowVectorExport="True" Left="597,16574" Top="42,35436" Width="154,96073" Height="18,89765" DataField="CRE_VALOR_PARCELA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_VALOR_PARCELA&#34;]"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="139,84261" Top="71,81107" Width="37,7953" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Ao(s) "/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="601,94527" Top="71,81107" Width="151,1812" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="NOTA PROMISSÓRIA"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="141,62214" Top="88,74026" Width="18,89765" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="a"/>
+      <TfrxMemoView Name="frxDBDataset2nome_razao" IndexTag="1" AllowVectorExport="True" Left="154,96073" Top="89,82684" Width="313,70099" Height="18,89765" DataField="PRI_RAZAO" DataSet="frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_RAZAO&#34;]"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="468,66172" Top="89,82684" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="CPF/CNPJ:"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="139,84261" Top="108,72449" Width="200,31509" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="OU A SUA ORDEM A QUANTIA DE"/>
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="419,52783" Top="71,81107" Width="181,41744" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="pagar ei por esta única via de "/>
+      <TfrxMemoView Name="Memo11" AllowVectorExport="True" Left="177,63791" Top="71,81107" Width="241,88992" Height="18,89765" DataField="CRE_DATA_VENCIMENTO" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="dddddd" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_VENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="480,00031" Top="20,67718" Width="83,14966" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Vencimento:"/>
+      <TfrxMemoView Name="frxContasReceberdata_vencimento1" IndexTag="1" AllowVectorExport="True" Left="554,59091" Top="21,67718" Width="200,31509" Height="18,89765" DataField="CRE_DATA_VENCIMENTO" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" DisplayFormat.FormatStr="dd 'de' mmmm 'de' yyyy" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_VENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="Memo13" AllowVectorExport="True" Left="139,84261" Top="143,62214" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="PAGAVÉL EM :"/>
+      <TfrxMemoView Name="frxDBDataset2cidade" IndexTag="1" AllowVectorExport="True" Left="226,7718" Top="143,62214" Width="162,51979" Height="18,89765" DataSetName="frxDBDataset2" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_MUNICIPIO&#34;]/[Global.&#34;PRI_UF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="frxContasRecebercliente" IndexTag="1" AllowVectorExport="True" Left="139,84261" Top="162,51979" Width="309,92146" Height="18,89765" DataField="CRE_NOME_CLIENTE" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_NOME_CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo14" AllowVectorExport="True" Left="139,84261" Top="181,41744" Width="94,48825" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="EMITENTE"/>
+      <TfrxMemoView Name="Memo15" AllowVectorExport="True" Left="139,84261" Top="196,53556" Width="52,91342" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="CPF/CNPJ:"/>
+      <TfrxMemoView Name="frxContasReceberendereco" IndexTag="1" AllowVectorExport="True" Left="139,84261" Top="211,65368" Width="381,73253" Height="52,91342" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_ENDERECO_CLIENTE&#34;], Nº [frxContasAReceber.&#34;CRE_NUMERO_CLIENTE&#34;] [frxContasAReceber.&#34;CRE_COMPLEMENTO_CLIENTE&#34;]-[frxContasAReceber.&#34;CRE_BAIRRO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_MUNICIPIO_CLIENTE&#34;] - [frxContasAReceber.&#34;CRE_CEP_CLIENTE&#34;]&#13;&#10;">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="frxContasReceberdata_compra" IndexTag="1" AllowVectorExport="True" Left="524,35467" Top="154,96073" Width="192,75603" Height="18,89765" DataField="CRE_DATA_COMPRA" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_DATA_COMPRA&#34;]"/>
+      <TfrxLineView Name="Line133" AllowVectorExport="True" Left="529,1342" Top="170,07885" Width="188,9765" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="Memo16" AllowVectorExport="True" Left="525,35467" Top="170,07885" Width="192,75603" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="DATA DA EMISSÃO"/>
+      <TfrxMemoView Name="Memo17" AllowVectorExport="True" Left="525,35467" Top="219,21274" Width="192,75603" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="ASSINATURA DO EMITENTE"/>
+      <TfrxLineView Name="Line134" AllowVectorExport="True" Left="453,5436" Top="207,87415" Width="317,48052" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="ValorEstenco" IndexTag="1" AllowVectorExport="True" Left="139,84261" Top="124,72449" Width="634,96104" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[ValorEstenco]"/>
+      <TfrxMemoView Name="cpfcnpjglobal" IndexTag="1" AllowVectorExport="True" Left="529,1342" Top="89,70872" Width="226,7718" Height="18,89765" DataField="PRI_CPFCNPJ" DataSet="frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_CPFCNPJ&#34;]"/>
+      <TfrxMemoView Name="cpfcnpjemitente" IndexTag="1" AllowVectorExport="True" Left="191,75603" Top="194,53556" Width="222,99227" Height="18,89765" DataField="CRE_CPF_CLIENTE" DataSet="frxContasAReceber" DataSetName="frxContasAReceber" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxContasAReceber.&#34;CRE_CPF_CLIENTE&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

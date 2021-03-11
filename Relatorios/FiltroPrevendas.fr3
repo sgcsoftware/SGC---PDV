@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.3.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44041,6764895718" ReportOptions.Description.Text="" ReportOptions.LastChange="44043,687180544" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda"/>
+    <item DataSet="dm.frxGlobal" DataSetName="Global"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="14,36220472" Left="0" Top="196,53556" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" RowCount="0">
+      <TfrxTableObject Name="TableObject1" AllowVectorExport="True" Left="0" Top="0,2987">
+        <TfrxTableColumn Name="TableColumn3" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn4" Width="423,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn5" Width="105,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn6" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn7" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow16" MinHeight="0" MaxHeight="0" Height="14,3622047244095">
+          <TfrxTableCell Name="TableCell36" AllowVectorExport="True" Restrictions="8" DataField="PRE_NUMEROPREVENDA" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" DisplayFormat.FormatStr="000000000" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxFiltroPrevenda.&#34;PRE_NUMEROPREVENDA&#34;]"/>
+          <TfrxTableCell Name="TableCell37" AllowVectorExport="True" Restrictions="8" DataField="PRE_NOME_CLIENTE" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[frxFiltroPrevenda.&#34;PRE_NOME_CLIENTE&#34;]"/>
+          <TfrxTableCell Name="TableCell38" AllowVectorExport="True" Restrictions="8" DataField="PRE_STATUS" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[frxFiltroPrevenda.&#34;PRE_STATUS&#34;]"/>
+          <TfrxTableCell Name="TableCell39" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text="[frxFiltroPrevenda.&#34;PRE_TOTAL&#34;] "/>
+          <TfrxTableCell Name="TableCell40" AllowVectorExport="True" Restrictions="8" DataField="PRE_DATAFATURAMENTO" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="[frxFiltroPrevenda.&#34;PRE_DATAFATURAMENTO&#34;]"/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="116,26739677" Left="0" Top="18,89765" Width="755,906">
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="554" Top="28,10235" Width="65,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Emissão :"/>
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="154" Top="51,10235" Width="623" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="3" Top="62,10235" Width="755,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="Pré-Vendas"/>
+      <TfrxMemoView Name="Date" IndexTag="1" AllowVectorExport="True" Left="608" Top="28,10235" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Date]"/>
+      <TfrxPictureView Name="img_logo" AllowVectorExport="True" Left="2" Top="0,10235" Width="150,42519685" Height="83,90551181" Center="True" Frame.Typ="0" HightQuality="True" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="GlobalPRI_FANTASIA" IndexTag="1" AllowVectorExport="True" Left="153" Top="0,10235" Width="400,63018" Height="18,89765" DataField="PRI_FANTASIA" DataSet="dm.frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_FANTASIA&#34;]"/>
+      <TfrxMemoView Name="GlobalPRI_ENDERECO" IndexTag="1" AllowVectorExport="True" Left="153" Top="13,10235" Width="400,63018" Height="18,89765" DataSet="dm.frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_ENDERECO&#34;] Nº [Global.&#34;PRI_NUMERO&#34;], [Global.&#34;PRI_BAIRRO&#34;] - [Global.&#34;PRI_MUNICIPIO&#34;]&#13;&#10;]"/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="555" Top="0,10235" Width="195,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Cnpj :"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="554" Top="14,10235" Width="65,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Telefone :"/>
+      <TfrxMemoView Name="GlobalPRI_TELEFONE" IndexTag="1" AllowVectorExport="True" Left="614" Top="14,10235" Width="158,74026" Height="18,89765" DataField="PRI_TELEFONE" DataSet="dm.frxGlobal" DataSetName="Global" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="calibri" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[Global.&#34;PRI_TELEFONE&#34;]"/>
+      <TfrxTableObject Name="TableObject2" AllowVectorExport="True" Left="0" Top="101,40105">
+        <TfrxTableColumn Name="TableColumn8" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn9" Width="423,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn10" Width="105,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn11" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableColumn Name="TableColumn12" Width="75,5906" MinWidth="0" MaxWidth="75,5906"/>
+        <TfrxTableRow Name="TableRow1" MinHeight="0" MaxHeight="0" Height="14,3622047244095">
+          <TfrxTableCell Name="TableCell1" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" DisplayFormat.FormatStr="000000000" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" HAlign="haCenter" ParentFont="False" Text="Nº Pré-Venda"/>
+          <TfrxTableCell Name="TableCell2" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" ParentFont="False" Text="Cliente"/>
+          <TfrxTableCell Name="TableCell3" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" HAlign="haCenter" ParentFont="False" Text="Status"/>
+          <TfrxTableCell Name="TableCell4" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" HAlign="haCenter" ParentFont="False" Text="Total"/>
+          <TfrxTableCell Name="TableCell5" AllowVectorExport="True" Restrictions="8" DataSet="frxFiltroPrevenda" DataSetName="frxFiltroPrevenda" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="15" Fill.BackColor="-16777194" HAlign="haCenter" ParentFont="False" Text="Faturamento"/>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxPageHeader>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="84,67718" Left="0" Top="234,33086" Width="755,906">
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="614" Top="2,66914" Width="136,48825" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777194" HAlign="haRight" ParentFont="False" Text="Faturado : [SUM(IIF(&#60;frxFiltroPrevenda.&#34;PRE_STATUS&#34;&#62;='Faturado',&#60;frxFiltroPrevenda.&#34;PRE_TOTAL&#34;&#62;,0),MasterData1,2)]"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="614" Top="23,66914" Width="136,48825" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777194" HAlign="haRight" ParentFont="False" Text="Aberto : [SUM(IIF(&#60;frxFiltroPrevenda.&#34;PRE_STATUS&#34;&#62;='Aberto',&#60;frxFiltroPrevenda.&#34;PRE_TOTAL&#34;&#62;,0),MasterData1,2)]"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="614" Top="44,66914" Width="137,48825" Height="18,89765" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="calibri" Font.Style="1" Frame.Typ="0" Fill.BackColor="-16777194" HAlign="haRight" ParentFont="False" Text="Cancelado : [SUM(IIF(&#60;frxFiltroPrevenda.&#34;PRE_STATUS&#34;&#62;='Cancelado',&#60;frxFiltroPrevenda.&#34;PRE_TOTAL&#34;&#62;,0),MasterData1,2)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
