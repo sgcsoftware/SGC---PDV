@@ -1,0 +1,58 @@
+-- 01/03 10:12:29:581 - *** ConfiguraIntSiTefInterativoEx. EnderecoIP: localhost CodigoLoja: 00000000 NumeroTerminal: SE000001 Resultado: 0 ParametrosAdicionais: [VersaoAutomacaoCielo=PROJETO 10]
+-- 01/03 10:12:29:780 - CliSiTef Inicializado CliSiTEF
+-- 01/03 10:12:29:783 - InfoECF: ineEstadoECF
+-- 01/03 10:12:29:785 -     Ret: L
+-- 01/03 10:12:29:788 - *** IniciaFuncaoSiTefInterativo. Modalidade: 111 Valor: 0,00 Documento: 101229 Data: 20210301 Hora: 101229 Operador:  Restricoes: 
+-- 01/03 10:12:29:808 - BloquearMouseTeclado: SIM
+-- 01/03 10:12:29:811 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:36:909 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 20 TipoCampo = -1 Buffer = Confirma o teste de comunicacao com o Servidor em localhost Tam.Min = 1 Tam.Max = 1
+-- 01/03 10:12:36:917 - CliSiTef DoExibeMsg: Oper: opmYesNo Mensagem: Confirma o teste de comunicacao com o Servidor em localhost
+-- 01/03 10:12:36:920 - BloquearMouseTeclado: NAO
+-- 01/03 10:12:39:896 - BloquearMouseTeclado: SIM
+-- 01/03 10:12:39:903 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 0
+-- 01/03 10:12:41:167 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 22 TipoCampo = -1 Buffer = Servidor Ativo Tam.Min = 1 Tam.Max = 1
+-- 01/03 10:12:41:169 - CliSiTef DoExibeMsg: Oper: opmOK Mensagem: Servidor Ativo
+-- 01/03 10:12:41:173 - BloquearMouseTeclado: NAO
+-- 01/03 10:12:43:813 - BloquearMouseTeclado: SIM
+-- 01/03 10:12:43:819 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:43:881 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 0 ProximoComando = 22 TipoCampo = -1 Buffer =  Tam.Min = 1 Tam.Max = 1
+-- 01/03 10:12:43:885 - *** ContinuaFuncaoSiTefInterativo, Finalizando: STS = 0
+-- 01/03 10:12:43:890 - BloquearMouseTeclado: NAO
+-- 01/03 10:12:43:896 - CliSiTef ProcessarResposta: 
+-- 01/03 10:12:53:213 - InfoECF: ineEstadoECF
+-- 01/03 10:12:53:218 -     Ret: P
+-- 01/03 10:12:53:223 - InfoECF: ineSubTotal
+-- 01/03 10:12:53:239 -     Ret: 1
+-- 01/03 10:12:53:245 - InfoECF: ineTotalAPagar
+-- 01/03 10:12:53:249 -     Ret: 0
+-- 01/03 10:12:53:255 - *** IniciaFuncaoSiTefInterativo. Modalidade: 3 Valor: 1,00 Documento: 101253 Data: 20210301 Hora: 101253 Operador:  Restricoes: [10]{TipoTratamento=4}
+-- 01/03 10:12:53:280 - BloquearMouseTeclado: SIM
+-- 01/03 10:12:53:287 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:392 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 1 TipoCampo = -1 Buffer = Conectando Servidor Tam.Min = 0 Tam.Max = 0
+-- 01/03 10:12:53:398 - CliSiTef DoExibeMsg: Oper: opmExibirMsgOperador Mensagem: Conectando Servidor
+-- 01/03 10:12:53:414 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:461 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 13 TipoCampo = -1 Buffer =  Tam.Min = 0 Tam.Max = 0
+-- 01/03 10:12:53:465 - CliSiTef DoExibeMsg: Oper: opmRemoverMsgOperador Mensagem: 
+-- 01/03 10:12:53:475 - CliSiTef DoExibeMsg: Oper: opmRemoverMsgCliente Mensagem: 
+-- 01/03 10:12:53:480 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:509 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 1 TipoCampo = -1 Buffer = Servidor Conectado Tam.Min = 0 Tam.Max = 0
+-- 01/03 10:12:53:519 - CliSiTef DoExibeMsg: Oper: opmExibirMsgOperador Mensagem: Servidor Conectado
+-- 01/03 10:12:53:530 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:566 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 0 TipoCampo = 25 Buffer =  Tam.Min = 0 Tam.Max = 0
+-- 01/03 10:12:53:569 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:597 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 0 TipoCampo = 30 Buffer =  Tam.Min = 0 Tam.Max = 0
+-- 01/03 10:12:53:601 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:12:53:649 - ContinuaFuncaoSiTefInterativo, Retornos: STS = 10000 ProximoComando = 22 TipoCampo = -1 Buffer = 31 - Erro Pinpad Tam.Min = 1 Tam.Max = 1
+-- 01/03 10:12:53:654 - CliSiTef DoExibeMsg: Oper: opmOK Mensagem: 31 - Erro Pinpad
+-- 01/03 10:12:53:658 - BloquearMouseTeclado: NAO
+-- 01/03 10:13:43:068 - BloquearMouseTeclado: SIM
+-- 01/03 10:13:43:090 - ContinuaFuncaoSiTefInterativo, Chamando: Continua = 0 Buffer = 
+-- 01/03 10:13:43:161 - ContinuaFuncaoSiTefInterativo, Retornos: STS = -43 ProximoComando = 22 TipoCampo = -1 Buffer =  Tam.Min = 1 Tam.Max = 1
+-- 01/03 10:13:43:167 - *** ContinuaFuncaoSiTefInterativo, Finalizando: STS = -43
+-- 01/03 10:13:43:172 - BloquearMouseTeclado: NAO
+-- 01/03 10:13:46:259 - CliSiTef CancelarTransacoesPendentesClass 
+-- 01/03 10:13:48:157 - CliSiTef DesInicializado
+-- 03/03 17:16:22:510 - *** ConfiguraIntSiTefInterativoEx. EnderecoIP: localhost CodigoLoja: 00000000 NumeroTerminal: SE000001 Resultado: 0 ParametrosAdicionais: [VersaoAutomacaoCielo=PROJETO 10]
+-- 03/03 17:16:22:725 - CliSiTef Inicializado CliSiTEF
+-- 03/03 17:16:22:729 - InfoECF: ineEstadoECF
+-- 03/03 17:16:22:732 -     Ret: L

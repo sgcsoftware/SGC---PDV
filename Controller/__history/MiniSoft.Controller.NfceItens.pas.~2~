@@ -1,0 +1,34 @@
+unit MiniSoft.Controller.NfceItens;
+
+interface
+
+uses MiniSoft.Model.NfceItens;
+     type
+     TNfceItensController = class
+       private
+       public
+       procedure Inserir(ObjNfceItens : TNfceItensModel);
+       constructor create;
+       destructor destroy; override;
+     end;
+implementation
+
+{ TNfceItensController }
+
+constructor TNfceItensController.create;
+begin
+
+end;
+
+destructor TNfceItensController.destroy;
+begin
+
+  inherited;
+end;
+
+procedure TNfceItensController.Inserir(ObjNfceItens: TNfceItensModel);
+begin
+ ObjNfceItens.Insert(ObjNfceItens);
+end;
+
+end.

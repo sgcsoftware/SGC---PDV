@@ -1,0 +1,52 @@
+unit MiniSoft.Controller.Produtos;
+
+interface
+
+uses Minisoft.Model.Produtos;
+    type
+    TProdutoController = class
+      private
+      public
+       procedure Inserir(ObjProduto : TProdutoModel);
+       procedure Alterar(ObjProduto : TProdutoModel);
+       procedure Deletar(ObjProduto : TProdutoModel);
+       procedure Ler  (ObjProduto: TProdutoModel; Codigo: String; qtd : Double);
+      constructor create;
+      destructor destroy; override;
+    end;
+implementation
+
+{ TProdutoController }
+
+procedure TProdutoController.Alterar(ObjProduto: TProdutoModel);
+begin
+ObjProduto.Update(ObjProduto);
+end;
+
+constructor TProdutoController.create;
+begin
+
+end;
+
+procedure TProdutoController.Deletar(ObjProduto: TProdutoModel);
+begin
+ObjProduto.Delete(ObjProduto);
+end;
+
+destructor TProdutoController.destroy;
+begin
+
+  inherited;
+end;
+
+procedure TProdutoController.Inserir(ObjProduto: TProdutoModel);
+begin
+ObjProduto.Insert(ObjProduto);
+end;
+
+procedure TProdutoController.Ler(ObjProduto: TProdutoModel; Codigo: String; qtd : Double);
+begin
+ObjProduto.Read(ObjProduto, Codigo, qtd);
+end;
+
+end.
